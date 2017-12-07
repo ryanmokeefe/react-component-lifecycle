@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+// Update this component to use the Mounting Component Lifecycle methods
+
 export default class HomePage extends Component {
   constructor() {
     super()
@@ -17,15 +19,4 @@ export default class HomePage extends Component {
     )
   }
 
-  componentWillMount() {
-    console.log("Home: Component Will Mount")
-  }
-
-  componentDidMount() {
-    console.log("Home: Component Did Mount")
-  }
-
-  componentWillUnmount() {
-    console.log("Home: Component Will Unmount")
-  }
 }

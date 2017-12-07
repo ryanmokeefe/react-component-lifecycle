@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+// Update this component to use the Updating Component Lifecycle methods
+
 export default class AboutPage extends Component {
   constructor() {
     super()
@@ -12,25 +14,7 @@ export default class AboutPage extends Component {
     this.decrementCounter = this.decrementCounter.bind(this)
   }
 
-  componentWillReceiveProps() {
-    console.log("About: Component Will Receive Props")
-  }
-
-  shouldComponentUpdate() {
-    console.log("About: Should Component Update")
-    return true
-  }
-
-  componentWillUpdate() {
-    console.log("About: Component Will Update")
-  }
-
-  componentDidUpdate() {
-    console.log("About: Component Did Update")
-  }
-
   render() {
-    console.log("About: render")
     return (
       <div>
         <h2>About</h2>
