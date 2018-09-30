@@ -8,7 +8,15 @@ export default class HomePage extends Component {
 
     console.log("Home: In the constructor")
   }
-
+  componentDidMount() {
+    console.log('home comp Did mount')
+  }
+  componentWillUnmount() {
+    console.log('home comp will unmount')
+  }
+  componentWillMount() {
+    console.log('home component will mount')
+  }
   render() {
     console.log("Home: In render")
     return (

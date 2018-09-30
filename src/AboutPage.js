@@ -13,6 +13,12 @@ export default class AboutPage extends Component {
     this.incrementCounter = this.incrementCounter.bind(this)
     this.decrementCounter = this.decrementCounter.bind(this)
   }
+componentWillReceiveProps() {
+  console.log('component will receive props')
+}
+componentWillUpdate() {
+  console.log('component will update')
+}
 
   render() {
     return (
